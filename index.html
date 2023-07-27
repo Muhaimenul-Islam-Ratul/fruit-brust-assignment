@@ -5,16 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fruit Brust Assignment</title>
+  <!-- lato font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<!-- daisy  -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .font-lato{
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
 </head>
 
-<body>
+<body class="font-lato bg-[#FFF]">
   <header class="mx-5 lg:mx-56 ">
     <!-- navbar section -->
-    <section class="my-12">
-      <div class="navbar  bg-red-500 rounded-full">
-        <div class="navbar-start">
+    <section class="my-12 ">
+      <div class="navbar bg-white lg:bg-[#F85559] rounded-full">
+        <div class="navbar-start order-last lg:order-first">
 
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -43,12 +53,12 @@
           </div>
 
         </div>
-        <div class="navbar-center lg:end-1">
+        <div class=" navbar-left lg:navbar-center lg:end-1">
           <img src="images/logo.png" alt="">
-          <a class="btn btn-ghost normal-case text-white text-5xl">Fruit Burst</a>
+          <a class="btn btn-ghost normal-case text-black lg:text-white text-2xl lg:text-5xl font-black">Fruit Burst</a>
 
         </div>
-        <div class="invisible lg:visible navbar-end form-control ">
+        <div class="invisible lg:visible navbar-end  ">
           <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
         </div>
 
@@ -62,9 +72,9 @@
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="max-w-md pt-20 pb-60">
-                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                <h1 class="mb-5 text-5xl font-black">Exotic tastes at your doorstep</h1>
                 <p class="mb-5">We supply highly quality organic products.</p>
-                <button class="btn btn-primary">Shop Now</button>
+                <button class="btn btn-secondary">Shop Now</button>
               </div>
             </div>
           </div>
@@ -128,7 +138,7 @@
           </div>
         </div>
       </div>
-      <div class="invisible lg:visible flex justify-center relative bottom-16 bg-slate-100">
+      <div class="invisible lg:visible mx-40 flex justify-center space-x-5 > * + * + * + * rounded-xl relative bottom-16 bg-slate-100">
         <div class="">
           <img src="images/fruit1.png" alt="">
           <p>Strawberry</p>
@@ -155,10 +165,10 @@
   </header>
   <main class="mx-5 lg:mx-56 ">
     <!-- deal of the day -->
-    <section>
+    <section> 
       <div class="grid grid-cols-1 lg:grid-cols-2	">
         <div class="text-left my-24">
-          <h2 class="text-5xl font-extrabold mb-5">Deal of the day</h2>
+          <h2 class="text-5xl font-black mb-5">Deal of the day</h2>
           <p class=" lg:max-w-3xl mb-10 mx-auto">Contrary to popular belief, is not simply random text. It has roots in
             a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
@@ -198,20 +208,21 @@
         <!--card container -->
         <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           <!-- first card -->
-          <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to-blue-500 shadow-xl">
+          <div class="card  p-8 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title text-xl font-bold">12.90$ - 18.85$</h2>
               <p>Apples</p>
-              <div class="rating">
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                <path d="M45.9043 0L50.4532 7.00591L58.5219 9.16716L53.2645 15.6584L53.7023 24L45.9043 21.0059V0Z" fill="#FBC0A8"/>
+                <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+              </svg>
               <div>
                 
                 <a href="#my_modal_8" class="link link-secondary">Details</a>
@@ -225,13 +236,14 @@
                       <div class="card-body items-center text-center">
                         <h2 class="card-title text-xl font-bold">12.90$ - 18.85$</h2>
                         <p>Apple</p>
-                        <div class="rating">
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                          <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                          <path d="M45.9043 0L50.4532 7.00591L58.5219 9.16716L53.2645 15.6584L53.7023 24L45.9043 21.0059V0Z" fill="#FBC0A8"/>
+                          <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                          <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                          <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                          <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                        </svg>
           
                       </div>
                     </div>
@@ -246,20 +258,21 @@
             </div>
           </div>
           <!-- 2nd    card -->
-          <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to-blue-500 shadow-xl">
+          <div class="card  p-8 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title text-xl font-bold">12.90$ - 18.85$</h2>
               <p>Orange</p>
-              <div class="rating">
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                <path d="M45.9043 0L50.4532 7.00591L58.5219 9.16716L53.2645 15.6584L53.7023 24L45.9043 21.0059V0Z" fill="#FBC0A8"/>
+                <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+              </svg>
               <div>
                 
                 <a href="#my_modal_8" class="link link-secondary">Details</a>
@@ -273,13 +286,14 @@
                       <div class="card-body items-center text-center">
                         <h2 class="card-title text-xl font-bold">12.90$ - 18.85$</h2>
                         <p>Orange</p>
-                        <div class="rating">
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                          <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                          <path d="M45.9043 0L50.4532 7.00591L58.5219 9.16716L53.2645 15.6584L53.7023 24L45.9043 21.0059V0Z" fill="#FBC0A8"/>
+                          <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                          <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                          <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                          <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                        </svg>
           
                       </div>
                     </div>
@@ -295,20 +309,21 @@
             </div>
           </div>
           <!-- 3rd card -->
-          <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to-blue-500 shadow-xl">
+          <div class="card  p-8 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title text-xl font-bold">12.90$ - 18.85$</h2>
               <p>Red Dragon</p>
-              <div class="rating">
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                <path d="M45.9043 0L50.4532 7.00591L58.5219 9.16716L53.2645 15.6584L53.7023 24L45.9043 21.0059V0Z" fill="#FBC0A8"/>
+                <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+              </svg>
               <div>
                 
                 <a href="#my_modal_8" class="link link-secondary">Details</a>
@@ -322,13 +337,14 @@
                       <div class="card-body items-center text-center">
                         <h2 class="card-title text-xl font-bold">12.90$ - 18.85$</h2>
                         <p>Red Dragon</p>
-                        <div class="rating">
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                          <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                          <path d="M45.9043 0L50.4532 7.00591L58.5219 9.16716L53.2645 15.6584L53.7023 24L45.9043 21.0059V0Z" fill="#FBC0A8"/>
+                          <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                          <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                          <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                          <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                        </svg>
           
                       </div>
                     </div>
@@ -344,20 +360,21 @@
             </div>
           </div>
           <!-- four card -->
-          <div class="card  p-8 bg-gradient-to-r from-[#F4F4F4] to-blue-500 shadow-xl">
+          <div class="card  p-8 shadow-xl">
             <figure class="px-10 pt-10">
               <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title text-xl font-bold">12.90$ - 18.85$</h2>
               <p>Banana</p>
-              <div class="rating">
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                <path d="M45.9043 0L50.4532 7.00591L58.5219 9.16716L53.2645 15.6584L53.7023 24L45.9043 21.0059V0Z" fill="#FBC0A8"/>
+                <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+              </svg>
               <div>
                 
                 <a href="#my_modal_8" class="link link-secondary">Details</a>
@@ -371,13 +388,14 @@
                       <div class="card-body items-center text-center">
                         <h2 class="card-title text-xl font-bold">12.90$ - 18.85$</h2>
                         <p>Banana</p>
-                        <div class="rating">
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                          <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                          <path d="M45.9043 0L50.4532 7.00591L58.5219 9.16716L53.2645 15.6584L53.7023 24L45.9043 21.0059V0Z" fill="#FBC0A8"/>
+                          <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                          <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                          <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                          <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                        </svg>
           
                       </div>
                     </div>
@@ -408,69 +426,69 @@
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
           <div class="max-w-screen-md">
-            <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+            <h1 class="mb-5 text-5xl font-black	">Meet the team section</h1>
             <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
               Latin literature from 45 BC, making it over 2000 years old.</p>
             <!-- card item -->
-            <div class="grid grid-flow-row gap-28 lg:grid-flow-col ">
+            <div class="grid grid-flow-row lg:grid-flow-col ">
               <!-- first picture -->
               <div>
                 <div class="avatar">
-                  <div class="w-24 rounded-full">
+                  <div class="w-32 rounded-full">
                     <img src="/images/member1.png" />
                   </div>
                 </div>
-                <p>Awlad Hossain</p>
-                <p>Fruits Expert</p>
+                <p class="text-xl">Awlad Hossain</p>
+                <p class="">Fruits Expert</p>
                 <div class="flex gap-7 justify-center ">
-                  <img src="images/twitter.png" alt="">
-                  <img src="images/youtube (1).png" alt="">
-                  <img src="images/facebook.png" alt="">
+                  <img class="h-6 w-6" src="images/twitter.png" alt="">
+                  <img class="h-6 w-6" src="images/youtube (1).png" alt="">
+                  <img class="h-6 w-6" src="images/facebook.png" alt="">
                 </div>
               </div>
               <!-- 2nd card picture -->
               <div>
                 <div class="avatar">
-                  <div class="w-24 rounded-full">
+                  <div class="w-32 rounded-full">
                     <img src="/images/member2.png" />
                   </div>
                 </div>
-                <p>Safia Chowdhury</p>
+                <p class="text-xl">Safia Chowdhury</p>
                 <p>Fruits Expert</p>
                 <div class="flex gap-7 justify-center ">
-                  <img src="images/twitter.png" alt="">
-                  <img src="images/youtube (1).png" alt="">
-                  <img src="images/facebook.png" alt="">
+                  <img class="h-6 w-6" src="images/twitter.png" alt="">
+                  <img class="h-6 w-6" src="images/youtube (1).png" alt="">
+                  <img class="h-6 w-6" src="images/facebook.png" alt="">
                 </div>
               </div>
               <!-- 3rd card picture -->
               <div>
                 <div class="avatar">
-                  <div class="w-24 rounded-full">
+                  <div class="w-32 rounded-full">
                     <img src="/images/member3.png" />
                   </div>
                 </div>
-                <p>Rokib Hossain</p>
+                <p class="text-xl">Rokib Hossain</p>
                 <p>Fruits Expert</p>
                 <div class="flex gap-7 justify-center ">
-                  <img src="images/twitter.png" alt="">
-                  <img src="images/youtube (1).png" alt="">
-                  <img src="images/facebook.png" alt="">
+                  <img class="h-6 w-6" src="images/twitter.png" alt="">
+                  <img class="h-6 w-6" src="images/youtube (1).png" alt="">
+                  <img class="h-6 w-6" src="images/facebook.png" alt="">
                 </div>
               </div>
               <!-- 4th card  picture -->
               <div>
                 <div class="avatar">
-                  <div class="w-24 rounded-full">
+                  <div class="w-32 rounded-full">
                     <img src="/images/member4.png" />
                   </div>
                 </div>
-                <p>Chaity</p>
+                <p class="text-xl">Chaity</p>
                 <p>Fruits Expert</p>
                 <div class="flex gap-7 justify-center ">
-                  <img src="images/twitter.png" alt="">
-                  <img src="images/youtube (1).png" alt="">
-                  <img src="images/facebook.png" alt="">
+                  <img class="h-6 w-6" src="images/twitter.png" alt="">
+                  <img class="h-6 w-6" src="images/youtube (1).png" alt="">
+                  <img class="h-6 w-6" src="images/facebook.png" alt="">
                 </div>
               </div>
 
@@ -507,7 +525,7 @@
     <footer class="footer m-auto footer-center p-10 bg-gray-950 text-base-content rounded">
       <div class="flex pt-36">
         <img src="images/logo.png" alt="">
-        <h2 class="text-white text-5xl">Fruit Burst</h2>
+        <h2 class="text-white text-5xl font-black">Fruit Burst</h2>
       </div>
       <div class="grid grid-cols-4 lg:grid-flow-col gap-5 text-white	">
         <a class="link link-hover">Home</a>
